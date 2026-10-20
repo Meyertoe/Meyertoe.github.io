@@ -1,127 +1,302 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon Mayr - Frontend Developer</title>
+    <meta
+        name="description"
+        content="Simon Mayr — frontend developer based in Stockholm. Explore projects built with React, JavaScript, Angular and C#/.NET."
+    >
+    <meta name="theme-color" content="#0f0f1e">
+    <title>Simon Mayr | Frontend Developer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">Simon Mayr</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="container">
+                <a class="logo" href="#home">Simon Mayr</a>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Frontend Developer</h1>
-                <p class="hero-subtitle">Building beautiful and functional web applications</p>
-                <a href="#projects" class="cta-button">View My Work</a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-        </div>
-    </section>
+        </nav>
+    </header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p class="about-text">
-                I'm a passionate frontend developer with expertise in React, JavaScript, and modern web technologies. 
-                I love creating intuitive user interfaces and solving complex problems.
-            </p>
-            
-            <div class="skills">
-                <h3>Tech Stack</h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <span class="skill-icon">⚛️</span>
-                        <p>React</p>
-                    </div>
-                    <div class="skill-card">
-                        <span class="skill-icon">📝</span>
-                        <p>JavaScript</p>
-                    </div>
-                    <div class="skill-card">
-                        <span class="skill-icon">🎨</span>
-                        <p>HTML/CSS</p>
-                    </div>
-                    <div class="skill-card">
-                        <span class="skill-icon">💾</span>
-                        <p>Supabase</p>
-                    </div>
-                    <div class="skill-card">
-                        <span class="skill-icon">🔧</span>
-                        <p>Strapi</p>
-                    </div>
-                    <div class="skill-card">
-                        <span class="skill-icon">📊</span>
-                        <p>Git</p>
+    <main>
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-content">
+                    <p>Hi, I'm Simon — based in Stockholm.</p>
+
+                    <h1 id="hero-heading" class="hero-title">
+                        Frontend Developer
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        I build interactive web applications with React and
+                        JavaScript, with a focus on clear interfaces and
+                        thoughtful user experiences.
+                    </p>
+
+                    <a href="#projects" class="cta-button">
+                        Explore My Projects
+                    </a>
+
+                    <p class="availability">
+                        Open to junior developer roles and LIA opportunities.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section
+            id="projects"
+            class="projects"
+            aria-labelledby="projects-heading"
+        >
+            <div class="container">
+                <h2 id="projects-heading">Selected Projects</h2>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-header" aria-hidden="true">01</div>
+
+                        <h3>Plugghjälpen</h3>
+
+                        <p>
+                            An interactive learning platform that combines
+                            quizzes and learning activities with XP,
+                            achievements, streaks and progression.
+                        </p>
+
+                        <h4>What I built</h4>
+                        <p>
+                            React interfaces, reusable activity components
+                            and progress tracking. The project explores how
+                            feedback and playful interaction can make
+                            learning more engaging.
+                        </p>
+
+                        <div class="project-tech" aria-label="Technologies">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>Vite</span>
+                            <span>CSS</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header" aria-hidden="true">02</div>
+
+                        <h3>Matkartan</h3>
+
+                        <p>
+                            A restaurant discovery application that brings
+                            together an interactive map, restaurant listings
+                            and filtering.
+                        </p>
+
+                        <h4>What I built</h4>
+                        <p>
+                            A responsive React interface with Leaflet map
+                            interactions and Firebase integration, including
+                            an admin workflow for reviewing restaurant
+                            submissions.
+                        </p>
+
+                        <div class="project-tech" aria-label="Technologies">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>Leaflet</span>
+                            <span>Firebase</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header" aria-hidden="true">03</div>
+
+                        <h3>Book &amp; Quote Manager</h3>
+
+                        <p>
+                            A fullstack application for managing books and
+                            personal quotes, built with Angular and C#/.NET.
+                        </p>
+
+                        <h4>What I built</h4>
+                        <p>
+                            An Angular frontend and REST API with SQLite,
+                            Entity Framework and JWT authentication.
+                            Features include registration, login, book and
+                            quote management, protected routes and
+                            user-specific access to quotes.
+                        </p>
+
+                        <div class="project-tech" aria-label="Technologies">
+                            <span>Angular</span>
+                            <span>TypeScript</span>
+                            <span>C# / .NET</span>
+                            <span>SQLite</span>
+                            <span>REST API</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header" aria-hidden="true">04</div>
+
+                        <h3>BookDucks</h3>
+
+                        <p>
+                            A book application built with React and Strapi,
+                            featuring book information, ratings and three
+                            visual themes.
+                        </p>
+
+                        <h4>What I worked on</h4>
+                        <p>
+                            Connecting the React interface to a Strapi
+                            backend and presenting book content through
+                            reusable components and responsive layouts.
+                        </p>
+
+                        <div class="project-tech" aria-label="Technologies">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>Strapi</span>
+                            <span>Vite</span>
+                        </div>
+
+                        <a
+                            href="https://github.com/Meyertoe/bookducks"
+                            class="project-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View on GitHub
+                            <span aria-hidden="true">↗</span>
+                            <span class="sr-only">(opens in a new tab)</span>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading">A Little About Me</h2>
+
+                <p class="about-text">
+                    I'm in my final year of Frontend Development at
+                    Nackademin, graduating in May 2027. I enjoy taking an
+                    idea from an early sketch to a working application,
+                    thinking through both the code and the experience
+                    of using it.
+                </p>
+
+                <p class="about-text">
+                    My main focus is React and JavaScript. Through my
+                    projects, I have also worked with Angular, TypeScript,
+                    C#/.NET, APIs and databases, developing a broader
+                    understanding of how an application fits together.
+                </p>
+
+                <p class="about-text">
+                    Before studying development, I worked in IT support
+                    and ran my own shop. Those experiences taught me to
+                    listen, take responsibility and solve practical
+                    problems. Outside development, I coach youth football
+                    — another place where communication, teamwork and
+                    helping others improve matter to me.
+                </p>
+
+                <div class="skills">
+                    <h3>Technologies &amp; Tools I've Worked With</h3>
+
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <p>React &amp; JavaScript</p>
+                        </div>
+                        <div class="skill-card">
+                            <p>HTML &amp; CSS</p>
+                        </div>
+                        <div class="skill-card">
+                            <p>Angular &amp; TypeScript</p>
+                        </div>
+                        <div class="skill-card">
+                            <p>C# &amp; .NET</p>
+                        </div>
+                        <div class="skill-card">
+                            <p>REST APIs</p>
+                        </div>
+                        <div class="skill-card">
+                            <p>Firebase &amp; Supabase</p>
+                        </div>
+                        <div class="skill-card">
+                            <p>SQLite &amp; Strapi</p>
+                        </div>
+                        <div class="skill-card">
+                            <p>Git &amp; GitHub</p>
+                        </div>
+                        <div class="skill-card">
+                            <p>Figma &amp; UX/UI</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">📚</div>
-                    <h3>BookDucks</h3>
-                    <p>A full-stack book discovery application that helps users explore and organize books.</p>
-                    <div class="project-tech">
-                        <span>React</span>
-                        <span>JavaScript</span>
-                        <span>Strapi</span>
-                    </div>
-                    <a href="https://github.com/Meyertoe/bookducks" class="project-link">View on GitHub →</a>
-                </div>
+        <section
+            id="contact"
+            class="contact"
+            aria-labelledby="contact-heading"
+        >
+            <div class="container">
+                <h2 id="contact-heading">Let's Build Something Useful</h2>
 
-                <div class="project-card">
-                    <div class="project-header">👥</div>
-                    <h3>Mini-ATS</h3>
-                    <p>A recruitment management app designed to streamline the hiring process.</p>
-                    <div class="project-tech">
-                        <span>React</span>
-                        <span>JavaScript</span>
-                        <span>Supabase</span>
-                    </div>
-                    <a href="https://github.com/Meyertoe/mini-ats" class="project-link">View on GitHub →</a>
+                <p>
+                    Looking for a curious developer who enjoys building,
+                    learning and working with others? I'd love to hear
+                    about your team.
+                </p>
+
+                <p>
+                    Based in Vega, Stockholm. Available for on-site,
+                    hybrid and remote opportunities.
+                </p>
+
+                <p>
+                    LIA period: 7 December 2026 – 26 April 2027.
+                </p>
+
+                <div class="contact-links">
+                    <a
+                        href="mailto:simonmayr1@hotmail.com"
+                        class="contact-link"
+                    >
+                        Email Me
+                    </a>
+
+                    <a
+                        href="https://github.com/Meyertoe"
+                        class="contact-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                        <span class="sr-only">(opens in a new tab)</span>
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <p>I'm always interested in hearing about new projects and opportunities.</p>
-            
-            <div class="contact-links">
-                <a href="https://github.com/Meyertoe" class="contact-link" target="_blank">GitHub</a>
-                <a href="mailto:simonmayr1@hotmail.com" class="contact-link">Email</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Simon Mayr. All rights reserved.</p>
+            <p>&copy; 2026 Simon Mayr.</p>
         </div>
     </footer>
 </body>
